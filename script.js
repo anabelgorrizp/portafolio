@@ -91,20 +91,42 @@ const io = new IntersectionObserver((entries) => {
     requestAnimationFrame(animateRing);
   })();
 
-  document.addEventListener('mouseover', e => {
+  function clearCursorStates() {
     ring.classList.remove('hover-project', 'hover-link', 'hover-cta');
     dot.style.opacity = '1';
+  }
 
-    // “Ver proyecto” uses the same high-contrast cursor treatment as the main CTA.
-    if (e.target.closest('.proj-view-btn')) {
+  document.addEventListener('mouseover', e => {
+    clearCursorStates();
+
+    // CTA priority: “Ver proyecto” must behave exactly like “Contactar”.
+    if (e.target.closest('.proj-view-btn, .hero-cta, .nav-cta, .contact-link.primary')) {
       ring.classList.add('hover-cta');
-    } else if (e.target.closest('.proj-list-img, .proj-list-item')) {
+      return;
+    }
+
+    if (e.target.closest('.proj-list-img, .proj-list-item')) {
       ring.classList.add('hover-project');
       dot.style.opacity = '0';
-    } else if (e.target.closest('.hero-cta, .nav-cta, .contact-link.primary')) {
-      ring.classList.add('hover-cta');
-    } else if (e.target.closest('a, button')) {
+      return;
+    }
+
+    if (e.target.closest('a, button')) {
       ring.classList.add('hover-link');
     }
+  });
+
+  // Force the CTA state while the pointer is physically over a project button,
+  // even though the button sits inside a project card with its own hover state.
+  document.querySelectorAll('.proj-view-btn').forEach(btn => {
+    btn.addEventListener('mouseenter', () => {
+      clearCursorStates();
+      ring.classList.add('hover-cta');
+    });
+    btn.addEventListener('mousemove', () => {
+      ring.classList.remove('hover-project', 'hover-link');
+      ring.classList.add('hover-cta');
+      dot.style.opacity = '1';
+    });
   });
 })();
