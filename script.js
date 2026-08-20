@@ -95,7 +95,10 @@ const io = new IntersectionObserver((entries) => {
     ring.classList.remove('hover-project', 'hover-link', 'hover-cta');
     dot.style.opacity = '1';
 
-    if (e.target.closest('.proj-list-img, .proj-list-item')) {
+    // “Ver proyecto” uses the same high-contrast cursor treatment as the main CTA.
+    if (e.target.closest('.proj-view-btn')) {
+      ring.classList.add('hover-cta');
+    } else if (e.target.closest('.proj-list-img, .proj-list-item')) {
       ring.classList.add('hover-project');
       dot.style.opacity = '0';
     } else if (e.target.closest('.hero-cta, .nav-cta, .contact-link.primary')) {
