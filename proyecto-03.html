@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>En Blanc — Anabel Górriz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">AG</a>
+    <ul>
+      <li><a href="index.html#about"      data-i18n="nav.about">Sobre mí</a></li>
+      <li><a href="index.html#projects"   data-i18n="nav.projects">Proyectos</a></li>
+      <li><a href="index.html#proceso"    data-i18n="nav.proceso">Proceso</a></li>
+      <li><a href="index.html#experience" data-i18n="nav.experience">Experiencia</a></li>
+      <li><a href="index.html#education"  data-i18n="nav.education">Formación</a></li>
+      <li><a href="index.html#contact" class="nav-cta" data-i18n="nav.contact">Contacto</a></li>
+    </ul>
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-lang="es">ES</button>
+      <span class="lang-sep">/</span>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <button class="nav-menu-btn" id="menuBtn">☰</button>
+  </nav>
+
+  <main class="proj-page">
+
+    <!-- BACK -->
+    <div class="container">
+      <a href="index.html#projects" class="proj-back">Proyectos</a>
+    </div>
+
+    <!-- HEADER -->
+    <header class="proj-header">
+      <div class="container">
+        <div class="proj-eyebrow">
+          <span class="proj-num">03</span>
+          <span>Coworking &amp; Coliving</span>
+          <span>2022 – 2023</span>
+          <span>ELISAVA</span>
+        </div>
+        <h1>En Blanc<br>Masía</h1>
+        <p class="proj-tagline-header">Comunidad artística internacional · Catalunya</p>
+      </div>
+    </header>
+
+    <!-- ── 1. DESCRIPCIÓN ────────────────────────────────── -->
+    <div class="container">
+      <div class="proj-content-grid">
+        <div>
+          <span class="proj-grid-label">Concepto</span>
+          <p>Esta masía catalana del siglo XIX, con su plegaria original inscrita en la puerta — <em>"Que en esta casa no haya ni poco ni mucho, sólo lo justo para vivir bien"</em> — inspira una propuesta de coworking y coliving para una comunidad artística internacional.</p>
+          <p>Los espacios, diseñados con una paleta cromática reducida a blancos y tierras, buscan minimizar el estímulo visual para fomentar la creatividad. La distribución potencia tanto la concentración individual como los encuentros fortuitos, creando redes colaborativas entre diversas disciplinas artísticas.</p>
+          <p>El proyecto integra arquitectura y paisaje, ofreciendo a escritores, pintores, fotógrafos, escultores, diseñadores, arquitectos, músicos y actores un entorno que equilibra trabajo, comunidad y conexión con la naturaleza.</p>
+        </div>
+        <div>
+          <canvas class="pdf-page" data-page="21" data-scale="1.0"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 2. ESTRATEGIA DE DISEÑO ──────────────────────── -->
+    <div class="container">
+      <div class="proj-content-grid">
+        <div>
+          <span class="proj-grid-label">Estrategia de diseño</span>
+          <p>El diseño potencia espacios diáfanos de luz natural y mínima interferencia visual, con áreas versátiles adaptables a distintas disciplinas artísticas. Incluye talleres para procesos creativos con materiales, zona expositiva y galería, sala de proyecciones y áreas comunes.</p>
+          <p>La experiencia sensorial se construye mediante la conexión constante con el entorno natural, secuencias espaciales que generan sorpresa e inspiración, y puntos estratégicos que ofrecen múltiples perspectivas. Ambientes que alternan serenidad y estímulo creativo, con oportunidades constantes para el descubrimiento casual.</p>
+        </div>
+        <div>
+          <canvas class="pdf-page" data-page="23" data-scale="1.0"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 3. PLANTA PRINCIPAL ───────────────────────────── -->
+    <div class="container">
+      <div class="proj-content-grid">
+        <div>
+          <span class="proj-grid-label">Planta principal — Papel i Lienzo</span>
+          <h4 style="font-size:1.1rem;font-weight:500;margin-bottom:1rem">Papel i Lienzo</h4>
+          <p>Espacio dinámico y versátil. Alberga una zona de trabajo abierta y colaborativa, un área de estar para descanso y encuentros informales, una galería que conecta diferentes ambientes, y un espacio dedicado a exposiciones donde se integran arte y creatividad.</p>
+        </div>
+        <div>
+          <canvas class="pdf-page" data-page="24" data-scale="1.0"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fotos tras la planta principal (pdf pág. 25) -->
+    <div class="container">
+      <div class="proj-gallery-main">
+        <canvas class="pdf-page hero-canvas" data-page="25" data-scale="1.2"></canvas>
+        <canvas class="pdf-page"             data-page="27" data-scale="1.2"></canvas>
+        <canvas class="pdf-page"             data-page="29" data-scale="1.2"></canvas>
+      </div>
+    </div>
+
+    <!-- ── 4. PLANTA SÓTANO ──────────────────────────────── -->
+    <div class="container">
+      <div class="proj-content-grid">
+        <div>
+          <span class="proj-grid-label">Planta sótano — Luna i Algodón</span>
+          <h4 style="font-size:1.1rem;font-weight:500;margin-bottom:1rem">Luna i Algodón</h4>
+          <p>Espacio multifuncional que integra diversas áreas de descanso y convivencia: sala de proyecciones, zona de relax, cocina y comedor, coliving con habitaciones privadas y lavandería, en una distribución flexible que favorece la interacción y el bienestar.</p>
+        </div>
+        <div>
+          <canvas class="pdf-page" data-page="26" data-scale="1.0"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 5. PLANTA TALLER ──────────────────────────────── -->
+    <div class="container">
+      <div class="proj-content-grid">
+        <div>
+          <span class="proj-grid-label">Planta taller — Yeso</span>
+          <h4 style="font-size:1.1rem;font-weight:500;margin-bottom:1rem">Yeso</h4>
+          <p>Espacio para la creación y producción. El taller creativo cuenta con máquinas especializadas junto a mesas de trabajo diseñadas para diversos procesos. Su distribución flexible favorece la interacción entre herramientas, promoviendo un ambiente funcional que estimula la experimentación y el desarrollo de proyectos.</p>
+        </div>
+        <div>
+          <canvas class="pdf-page" data-page="28" data-scale="1.0"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAV PREV / NEXT -->
+    <div class="container">
+      <div class="proj-nav-bar">
+        <a href="proyecto-02.html" class="proj-nav-link has-prev">Oficinas Diagonal</a>
+        <span class="proj-nav-center">03 / 03</span>
+        <span></span>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <span>© 2026 Anabel Górriz — Interior Design &amp; Architecture</span>
+    <span>anabelgorrizp@gmail.com</span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="i18n.js"></script>
+  <script src="pdf-renderer.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

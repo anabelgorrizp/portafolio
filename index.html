@@ -1,1 +1,365 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0; url=proyecto-01.html"><title>Portfolio — Anabel Górriz</title></head><body><p><a href="proyecto-01.html">Abrir Proyecto 01</a></p></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anabel Górriz — Interior Design & Architecture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <span class="nav-logo">AG</span>
+    <ul>
+      <li><a href="#about"      data-i18n="nav.about">Sobre mí</a></li>
+      <li><a href="#projects"   data-i18n="nav.projects">Proyectos</a></li>
+      <li><a href="#proceso"    data-i18n="nav.proceso">Proceso</a></li>
+      <li><a href="#experience" data-i18n="nav.experience">Experiencia</a></li>
+      <li><a href="#education"  data-i18n="nav.education">Formación</a></li>
+      <li><a href="#contact" class="nav-cta" data-i18n="nav.contact">Contacto</a></li>
+    </ul>
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-lang="es">ES</button>
+      <span class="lang-sep">/</span>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <button class="nav-menu-btn" id="menuBtn">☰</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-eyebrow" data-i18n="hero.eyebrow">Interior Design &amp; Architecture · Barcelona</div>
+        <h1 class="hero-title">Anabel<br><span class="hero-name-accent">Górriz</span></h1>
+        <p class="hero-sub" data-i18n-html="hero.sub">Diseñadora Industrial · Máster en Diseño de Interiores<br>FF&amp;E · Arquitectura · Mobiliario</p>
+
+        <a href="#contact" class="hero-cta" data-i18n="hero.cta">Contactar →</a>
+      </div>
+      <div class="hero-photo">
+        <img src="images/profile.jpg" alt="Anabel Górriz" class="profile-img">
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span data-i18n="hero.scroll">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section section-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="label" data-i18n="about.label">Sobre mí</span>
+        <h2 data-i18n="about.h2">Espacios con alma.</h2>
+      </div>
+      <div class="about-text">
+        <p class="body-large" data-i18n="about.p1">Soy Anabel Górriz, interiorista con 6 años de experiencia en el desarrollo integral de proyectos. Me motiva asumir nuevos retos en un estudio con una mirada creativa y un alto estándar de ejecución, donde pueda aportar valor desde la conceptualización hasta la entrega final.</p>
+        <p class="body-text" data-i18n="about.p2">Mi perfil combina una sólida base proyectista — definición arquitectónica, documentación y detalle — con una visión conceptual orientada a construir la narrativa del espacio. Mi especialización está en FF&E, acabados y piezas a medida; y gestiono la ejecución con visión 360: presupuestos, coordinación de proveedores y seguimiento en obra.</p>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat"><span class="stat-number">6+</span><span class="stat-label" data-i18n="about.stat1">Años de experiencia</span></div>
+        <div class="stat"><span class="stat-number">4</span><span class="stat-label" data-i18n="about.stat2">Empresas</span></div>
+        <div class="stat"><span class="stat-number">3</span><span class="stat-label" data-i18n="about.stat3">Proyectos seleccionados</span></div>
+        <div class="stat"><span class="stat-number">3</span><span class="stat-label" data-i18n="about.stat4">Idiomas</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-off">
+    <div class="container">
+      <div class="section-header">
+        <span class="label" data-i18n="projects.label">Proyectos seleccionados</span>
+        <h2 data-i18n-html="projects.h2">El trabajo<br>habla por sí solo.</h2>
+      </div>
+
+      <div class="proj-list">
+
+        <!-- PROYECTO 01 -->
+        <article class="proj-list-item">
+          <span class="proj-list-num" aria-hidden="true">01</span>
+          <div class="proj-list-content">
+            <div class="proj-list-meta">
+              <span data-i18n="card1.type">Reforma Integral</span>
+              <span class="proj-meta-sep">·</span>
+              <span>Vilablanch</span>
+              <span class="proj-meta-sep">·</span>
+              <span>2022 – 2023</span>
+            </div>
+            <h3 class="proj-list-title">Residencia Eixample</h3>
+            <p class="proj-list-desc" data-i18n="card1.desc">Restauración de un piso modernista en el Eixample barcelonés. Diálogo entre patrimonio construido y contemporaneidad.</p>
+            <a href="proyecto-01.html" class="proj-list-img" aria-hidden="true" tabindex="-1">
+              <img src="images/eixample-03.jpg" alt="Residencia Eixample" loading="lazy">
+            </a>
+            <a href="proyecto-01.html" class="proj-view-btn" data-i18n="proj.view">Ver proyecto</a>
+          </div>
+        </article>
+
+        <hr class="project-sep">
+
+        <!-- PROYECTO 02 -->
+        <article class="proj-list-item">
+          <span class="proj-list-num" aria-hidden="true">02</span>
+          <div class="proj-list-content">
+            <div class="proj-list-meta">
+              <span data-i18n="card2.type">Reforma Integral</span>
+              <span class="proj-meta-sep">·</span>
+              <span>Vilablanch</span>
+              <span class="proj-meta-sep">·</span>
+              <span>2023 – 2024</span>
+            </div>
+            <h3 class="proj-list-title">Oficinas Diagonal</h3>
+            <p class="proj-list-desc" data-i18n="card2.desc">Conversión de vivienda a oficinas en un edificio histórico. Patrimonio arquitectónico integrado con las demandas del trabajo moderno.</p>
+            <a href="proyecto-02.html" class="proj-list-img" aria-hidden="true" tabindex="-1">
+              <img src="images/diagonal-05.jpg" alt="Oficinas Diagonal" loading="lazy">
+            </a>
+            <a href="proyecto-02.html" class="proj-view-btn" data-i18n="proj.view">Ver proyecto</a>
+          </div>
+        </article>
+
+        <hr class="project-sep">
+
+        <!-- PROYECTO 03 -->
+        <article class="proj-list-item">
+          <span class="proj-list-num" aria-hidden="true">03</span>
+          <div class="proj-list-content">
+            <div class="proj-list-meta">
+              <span data-i18n="card3.type">Coworking &amp; Coliving</span>
+              <span class="proj-meta-sep">·</span>
+              <span>ELISAVA</span>
+              <span class="proj-meta-sep">·</span>
+              <span>2022 – 2023</span>
+            </div>
+            <h3 class="proj-list-title">En Blanc — Masía</h3>
+            <p class="proj-list-desc" data-i18n="card3.desc">Propuesta de coworking y coliving para una comunidad artística internacional en una masía catalana del siglo XIX.</p>
+            <a href="proyecto-03.html" class="proj-list-img" aria-hidden="true" tabindex="-1">
+              <canvas class="pdf-page" data-page="21" data-scale="0.8"></canvas>
+            </a>
+            <a href="proyecto-03.html" class="proj-view-btn" data-i18n="proj.view">Ver proyecto</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section id="proceso" class="section section-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="label" data-i18n="proceso.label">Proceso</span>
+        <h2 data-i18n-html="proceso.h2">Cuatro ejes,<br>un proyecto.</h2>
+      </div>
+      <div class="proceso-grid">
+        <div class="proceso-item">
+          <span class="proceso-num">01</span>
+          <h3 data-i18n="proceso.axis1.title">Project Management</h3>
+          <p data-i18n="proceso.axis1.desc">Coordinación de equipos y proveedores, planning, presupuesto, control de costes y seguimiento en obra. Capacidad de liderar proyectos con múltiples actores sin perder el hilo.</p>
+        </div>
+        <div class="proceso-item">
+          <span class="proceso-num">02</span>
+          <h3 data-i18n="proceso.axis2.title">Arquitectónico</h3>
+          <p data-i18n="proceso.axis2.desc">Nueva distribución, definición técnica y documentación de ejecución. Todo lo que requiere una reforma bien planteada.</p>
+        </div>
+        <div class="proceso-item">
+          <span class="proceso-num">03</span>
+          <h3 data-i18n="proceso.axis3.title">Concepto de diseño</h3>
+          <p data-i18n="proceso.axis3.desc">Narrativa global del espacio: visualidad, materialidad, estilo y estrategia de comunicación. El porqué detrás de cada decisión.</p>
+        </div>
+        <div class="proceso-item">
+          <span class="proceso-num">04</span>
+          <h3 data-i18n="proceso.axis4.title">FF&amp;E</h3>
+          <p data-i18n="proceso.axis4.desc">Selección minuciosa de mobiliario, iluminación, acabados, piezas y arte. Conocimiento profundo de marcas de alta gama y criterio para mezclar referencias con coherencia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="label light" data-i18n="exp.label">Experiencia</span>
+        <h2 class="light" data-i18n-html="exp.h2">Donde he<br>dejado huella.</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item current">
+          <div class="tl-left"><div class="tl-dot current-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-content">
+            <div class="tl-header">
+              <div><h3 data-i18n="exp.job0.title">Interiorista</h3><span class="company">Masmir Vico</span></div>
+              <div class="tl-meta"><span class="date" data-i18n="exp.job0.date">Feb 2026 — May 2026</span><span class="location">Barcelona</span></div>
+            </div>
+            <div class="tl-tags"><span class="tag" data-i18n="exp.fulltime">Jornada completa</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-content">
+            <div class="tl-header">
+              <div><h3 data-i18n="exp.job1.title">Interiorista</h3><span class="company">Estudio Vilablanch</span></div>
+              <div class="tl-meta"><span class="date" data-i18n="exp.job1.date">Ago 2022 — Nov 2025</span><span class="location">Barcelona · On-site</span></div>
+            </div>
+            <p class="tl-desc" data-i18n="exp.job1.desc">Proyectos de arquitectura e interiorismo residencial y comercial de alta gama. Desarrollo íntegro desde concepto hasta seguimiento de obra, selección de materiales, FF&amp;E y documentación técnica.</p>
+            <div class="tl-tags"><span class="tag" data-i18n="exp.fulltime">Jornada completa</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-content">
+            <div class="tl-header">
+              <div><h3 data-i18n="exp.job2.title">Interiorista · Diseñadora de Mobiliario</h3><span class="company">Proyecto Espacios</span></div>
+              <div class="tl-meta"><span class="date" data-i18n="exp.job2.date">Ene 2020 — Ene 2022</span><span class="location">La Habana · On-site</span></div>
+            </div>
+            <p class="tl-desc" data-i18n="exp.job2.desc">Diseño de espacios residenciales y comerciales, desarrollo de mobiliario personalizado e interiorismo integral.</p>
+            <div class="tl-tags"><span class="tag" data-i18n="exp.fulltime">Jornada completa</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="tl-left"><div class="tl-dot"></div></div>
+          <div class="tl-content">
+            <div class="tl-header">
+              <div><h3 data-i18n="exp.job3.title">Renderista</h3><span class="company">Behart — Plataforma de Arte</span></div>
+              <div class="tl-meta"><span class="date" data-i18n="exp.job3.date">Mar 2020 — Dic 2021</span><span class="location">La Habana · Hybrid</span></div>
+            </div>
+            <p class="tl-desc" data-i18n="exp.job3.desc">Visualización 3D y renders fotorrealistas para proyectos artísticos y espacios creativos.</p>
+            <div class="tl-tags"><span class="tag" data-i18n="exp.freelance">Freelance</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section section-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="label" data-i18n="edu.label">Formación</span>
+        <h2 data-i18n-html="edu.h2">La base<br>del oficio.</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-content">
+            <div class="tl-header">
+              <div><h3 data-i18n="edu.e1.title">Máster en Diseño del Espacio Interior</h3><span class="company">ELISAVA — Escola Superior de Disseny i Enginyeria</span></div>
+              <div class="tl-meta"><span class="date" data-i18n="edu.e1.date">Marzo 2022 – Febrero 2023 · Barcelona</span></div>
+            </div>
+            <p class="tl-desc" data-i18n-html="edu.e1.desc">Programa avanzado de diseño interior con énfasis en sostenibilidad, diseño biofílico, inclusividad y tecnologías emergentes. Proyecto fin de máster: <em>En Blanc</em>, propuesta de coworking y coliving para comunidad artística.</p>
+            <div class="tl-tags">
+              <span class="tag tag-edu" data-i18n="edu.master">Máster</span>
+              <span class="tag">FF&amp;E</span><span class="tag">Lighting Design</span>
+              <span class="tag">Biophilic Design</span><span class="tag">Sustainability</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="tl-left"><div class="tl-dot"></div></div>
+          <div class="tl-content">
+            <div class="tl-header">
+              <div><h3 data-i18n="edu.e2.title">Licenciatura en Diseño Industrial y de Producto</h3><span class="company">Universidad de La Habana</span></div>
+              <div class="tl-meta"><span class="date" data-i18n="edu.e2.date">Sep 2015 – Dic 2020 · La Habana, Cuba</span></div>
+            </div>
+            <p class="tl-desc" data-i18n="edu.e2.desc">Formación integral en diseño de producto, mobiliario, ergonomía, materiales y procesos industriales, con foco en la resolución creativa de problemas.</p>
+            <div class="tl-tags">
+              <span class="tag tag-edu" data-i18n="edu.degree">Licenciatura</span>
+              <span class="tag">Furniture Design</span><span class="tag">Product Design</span>
+              <span class="tag">Ergonomics</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-off">
+    <div class="container">
+      <div class="section-header center">
+        <span class="label" data-i18n="skills.label">Habilidades</span>
+        <h2 data-i18n-html="skills.h2">Las herramientas<br>del proyecto.</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4 data-i18n="skills.cat1">Diseño</h4>
+          <ul>
+            <li data-i18n="sk.interior">Diseño de Interiores</li>
+            <li>FF&amp;E</li>
+            <li data-i18n="sk.furniture">Diseño de Mobiliario</li>
+            <li data-i18n="sk.spatial">Planificación Espacial</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Software</h4>
+          <ul>
+            <li>AutoCAD</li><li>SketchUp</li>
+            <li>3ds Max</li><li>InDesign</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4 data-i18n="skills.cat4">Metodología</h4>
+          <ul>
+            <li data-i18n="sk.pm">Gestión de Proyectos</li>
+            <li data-i18n="sk.ucd">Diseño Centrado en Usuario</li>
+            <li data-i18n="sk.biophilic">Diseño Biofílico</li>
+            <li data-i18n="sk.sust">Sostenibilidad</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section class="section section-white lang-section">
+    <div class="container center-content">
+      <span class="label center" data-i18n="lang.label">Idiomas</span>
+      <div class="lang-grid">
+        <div class="lang-item"><span class="lang-code">ES</span><span class="lang-name" data-i18n="lang.es">Castellano</span></div>
+        <div class="lang-item"><span class="lang-code">EN</span><span class="lang-name" data-i18n="lang.en">Inglés</span></div>
+        <div class="lang-item"><span class="lang-code">CA</span><span class="lang-name" data-i18n="lang.ca">Catalán</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container center-content">
+      <span class="label center" data-i18n="contact.label">Contacto</span>
+      <h2 class="contact-headline" data-i18n-html="contact.h2">Creemos algo<br><em>memorable juntos.</em></h2>
+      <div class="contact-links">
+        <a href="mailto:anabelgorrizp@gmail.com" class="contact-link primary">anabelgorrizp@gmail.com</a>
+        <a href="tel:+34641755344" class="contact-link">+34 641 755 344</a>
+        <a href="https://www.linkedin.com/in/anabel-gorriz" target="_blank" class="contact-link">LinkedIn →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Anabel Górriz — Interior Design &amp; Architecture</span>
+    <span>anabelgorrizp@gmail.com</span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="i18n.js"></script>
+  <script src="pdf-renderer.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

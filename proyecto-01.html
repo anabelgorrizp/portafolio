@@ -1,40 +1,248 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Residencia Eixample — Anabel Górriz</title>
+  <title>Residencia Eixample â€” Anabel GÃ³rriz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300..600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="project-dossier.css" />
 </head>
-<body class="project-dossier-body">
+<body>
+
   <div class="cursor-dot" id="cursorDot"></div>
   <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
   <nav id="navbar">
     <a href="index.html" class="nav-logo">AG</a>
     <ul>
-      <li><a href="index.html#about" data-i18n="nav.about">Sobre mí</a></li><li><a href="index.html#projects" data-i18n="nav.projects">Proyectos</a></li><li><a href="index.html#proceso" data-i18n="nav.proceso">Proceso</a></li><li><a href="index.html#experience" data-i18n="nav.experience">Experiencia</a></li><li><a href="index.html#education" data-i18n="nav.education">Formación</a></li><li><a href="index.html#contact" class="nav-cta" data-i18n="nav.contact">Contacto</a></li>
+      <li><a href="index.html#about"      data-i18n="nav.about">Sobre mÃ­</a></li>
+      <li><a href="index.html#projects"   data-i18n="nav.projects">Proyectos</a></li>
+      <li><a href="index.html#proceso"    data-i18n="nav.proceso">Proceso</a></li>
+      <li><a href="index.html#experience" data-i18n="nav.experience">Experiencia</a></li>
+      <li><a href="index.html#education"  data-i18n="nav.education">FormaciÃ³n</a></li>
+      <li><a href="index.html#contact" class="nav-cta" data-i18n="nav.contact">Contacto</a></li>
     </ul>
-    <div class="lang-toggle"><button class="lang-btn active" data-lang="es">ES</button><span class="lang-sep">/</span><button class="lang-btn" data-lang="en">EN</button></div>
-    <button class="nav-menu-btn" id="menuBtn">☰</button>
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-lang="es">ES</button>
+      <span class="lang-sep">/</span>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <button class="nav-menu-btn" id="menuBtn">â˜°</button>
   </nav>
-  <main class="dossier-shell">
-    <div class="dossier-topbar"><a href="index.html#projects" class="proj-back">Proyectos</a><div class="dossier-progress" aria-hidden="true"><span id="dossierProgress"></span></div><div class="dossier-counter"><span id="dossierCurrent">01</span> / <span id="dossierTotal">09</span></div></div>
-    <section class="dossier-track" id="dossierTrack" aria-label="Dossier Residencia Eixample">
-      <article class="dossier-panel dossier-panel--cover" data-panel="01"><div class="dossier-cover-copy"><div class="proj-eyebrow"><span class="proj-num">01</span><span>Reforma Integral</span><span>2022–2023</span><span>Barcelona</span></div><h1>Residencia<br>Eixample</h1><p class="dossier-intro">Proyecto de restauración y arquitectura interior de un piso modernista en el Eixample barcelonés, donde se establece un diálogo entre patrimonio y contemporaneidad.</p><p class="dossier-intro dossier-intro--muted">La intervención unifica las antiguas habitaciones en espacios fluidos, respondiendo a las necesidades actuales mientras honra la memoria del lugar. Se recuperan suelos hidráulicos, techos decorados y la distribución espacial como testigos materiales de la historia.</p><span class="dossier-scroll-hint">Desliza para recorrer el dossier →</span></div><figure class="dossier-media dossier-media--hero"><img src="images/eixample-05.jpg" alt="Residencia Eixample — imagen principal" loading="eager"></figure></article>
-      <article class="dossier-panel dossier-panel--spread" data-panel="02"><div class="dossier-sidecopy"><span class="proj-grid-label">Look &amp; Feel</span><h2>Patrimonio como base.<br>Contemporaneidad como contrapunto.</h2><p>Una lectura respetuosa de la arquitectura existente, donde lo nuevo se introduce con precisión, sin imitar el pasado ni competir con él.</p></div><div class="dossier-moodboard-placeholder dossier-moodboard-placeholder--large"><canvas class="pdf-page" data-pdf-file="am50-moodboard" data-page="1" data-scale="1.2"></canvas></div></article>
-      <article class="dossier-panel dossier-panel--layout" data-panel="03"><div class="dossier-sidecopy dossier-sidecopy--narrow"><span class="proj-grid-label">Organización — Layout</span><h2>Una secuencia más fluida y continua.</h2><p>La nueva distribución conecta las antiguas estancias y refuerza la continuidad visual del piso, conservando los elementos originales que definen su identidad.</p><p class="dossier-note">Derribos · Estado reformado · Alzado longitudinal</p></div><div class="dossier-plans"><canvas class="pdf-page" data-pdf-file="am50-derribos" data-page="1" data-scale="0.75"></canvas><canvas class="pdf-page" data-pdf-file="am50-on" data-page="1" data-scale="0.75"></canvas><canvas class="pdf-page dossier-plan-wide" data-pdf-file="am50-alz" data-page="1" data-scale="0.75"></canvas></div></article>
-      <article class="dossier-panel dossier-panel--image" data-panel="04"><figure class="dossier-media dossier-media--full"><img src="images/eixample-12.jpg" alt="Residencia Eixample — salón" loading="lazy"></figure><div class="dossier-caption"><span>Residencia Eixample</span><span>Barcelona</span></div></article>
-      <article class="dossier-panel dossier-panel--gallery" data-panel="05"><div class="dossier-gallery-grid dossier-gallery-grid--three"><img src="images/eixample-02.jpg" alt="Salón con techo ornamental" loading="lazy"><img src="images/eixample-07.jpg" alt="Acceso a cocina" loading="lazy"><img src="images/eixample-08.jpg" alt="Cocina retroiluminada" loading="lazy"></div></article>
-      <article class="dossier-panel dossier-panel--gallery" data-panel="06"><div class="dossier-gallery-grid dossier-gallery-grid--three"><img src="images/eixample-03.jpg" alt="Salón principal" loading="lazy"><img src="images/eixample-19.jpg" alt="Salón con suelo hidráulico" loading="lazy"><img src="images/eixample-16.jpg" alt="Cocina con vidrieras" loading="lazy"></div></article>
-      <article class="dossier-panel dossier-panel--detail" data-panel="07"><div class="dossier-sidecopy"><span class="proj-grid-label">Cocina</span><h2>Una pieza contemporánea insertada en la arquitectura existente.</h2><p>La cocina se concibe desde una mirada minimalista y atemporal. Módulos en antracita y acero inoxidable se combinan con electrodomésticos en negro absoluto, configurando un volumen de presencia casi escultórica.</p><p>El contraste con los suelos hidráulicos y los techos originales hace visible la relación entre nuevo y existente sin recurrir a una imitación del pasado.</p></div><div class="dossier-detail-images"><img src="images/eixample-13.jpg" alt="Cocina vista desde salón" loading="lazy"><img src="images/eixample-14.jpg" alt="Cocina interior con isla" loading="lazy"></div></article>
-      <article class="dossier-panel dossier-panel--detail dossier-panel--off" data-panel="08"><div class="dossier-sidecopy"><span class="proj-grid-label">FF&amp;E</span><h2>Arquitectura como base.<br>Mobiliario como acento.</h2><p>La selección de mobiliario contemporáneo actualiza la vivienda sin alterar su identidad. Líneas depuradas, formas orgánicas y materiales nobles introducen calidez y personalidad.</p><p>La combinación de piezas actuales con la riqueza arquitectónica del Eixample construye una atmósfera sofisticada, serena y atemporal.</p></div><div class="dossier-moodboard-placeholder"><span>Furniture Moodboard</span><small>Reservado para el archivo definitivo</small></div></article>
-      <article class="dossier-panel dossier-panel--closing" data-panel="09"><div class="dossier-closing-grid"><img src="images/eixample-17.jpg" alt="Baño" loading="lazy"><img src="images/eixample-11.jpg" alt="Galería" loading="lazy"><img src="images/eixample-18.jpg" alt="Dormitorio" loading="lazy"></div><div class="dossier-closing-copy"><span class="proj-grid-label">01 / 03</span><h2>Residencia Eixample</h2><a href="proyecto-02.html" class="proj-view-btn">Siguiente proyecto</a></div></article>
-    </section>
+
+  <main class="proj-page">
+
+    <!-- BACK -->
+    <div class="container">
+      <a href="index.html#projects" class="proj-back">Proyectos</a>
+    </div>
+
+    <!-- HEADER -->
+    <header class="proj-header">
+      <div class="container">
+        <div class="proj-eyebrow">
+          <span class="proj-num">01</span>
+          <span>Reforma Integral</span>
+          <span>2022 â€“ 2023</span>
+          <span>Vilablanch</span>
+        </div>
+        <h1>Residencia<br>Eixample</h1>
+        <p class="proj-tagline-header">Reforma integral Â· Ausias Marc 50 Â· Barcelona</p>
+      </div>
+    </header>
+
+    <!-- â”€â”€ 1. INTRO â€” nÃºmero + 2 fotos anchas (layout-01) â”€â”€ -->
+    <div class="container fade-up">
+      <div class="proj-intro-v2">
+        <div class="proj-intro-v2-meta">
+          <span class="proj-intro-big-num">01</span>
+          <span class="proj-grid-label" style="margin-bottom:0">Reforma<br>Integral</span>
+        </div>
+        <div class="proj-intro-duo-photos">
+          <img src="images/eixample-05.jpg"
+               alt="Residencia Eixample â€” cocina con isla y bÃ³veda catalana"
+               loading="eager" style="object-position:center 45%">
+          <img src="images/eixample-12.jpg"
+               alt="Residencia Eixample â€” salon con puertas abiertas al balcon"
+               loading="eager" style="object-position:center 40%">
+        </div>
+      </div>
+    </div>
+
+    <!-- DescripciÃ³n â€” bloque de texto aireado bajo las fotos -->
+    <div class="container fade-up">
+      <div class="proj-intro-text">
+        <p>Proyecto de restauraciÃ³n y arquitectura interior de un piso modernista en el Eixample barcelonÃ©s, donde se establece un diÃ¡logo entre patrimonio y contemporaneidad. La intervenciÃ³n unifica las antiguas habitaciones en espacios fluidos, respondiendo a las necesidades actuales mientras honra la memoria del lugar.</p>
+        <p>Se recuperan los elementos originales â€” suelos hidrÃ¡ulicos, techos decorados y distribuciÃ³n espacial â€” como testigos materiales de la historia. La propuesta armoniza tradiciÃ³n constructiva con funcionalidad moderna.</p>
+      </div>
+    </div>
+
+    <!-- â”€â”€ 2. PLANOS â€” secciÃ³n diferenciada fondo arena (layout-02) â”€â”€ -->
+    <div class="proj-offbg">
+      <div class="container fade-up">
+        <div class="proj-content-grid">
+          <div>
+            <span class="proj-grid-label">Planos</span>
+            <p>IntervenciÃ³n sobre la distribuciÃ³n original del piso en Ausias Marc 50. Se conservan los elementos histÃ³ricos â€” suelos hidrÃ¡ulicos, carpinterÃ­as y molduras â€” y se articula una nueva distribuciÃ³n que responde a las necesidades del habitar contemporÃ¡neo.</p>
+            <p style="margin-top:1rem;font-size:.82rem;color:var(--n2);letter-spacing:.04em;text-transform:uppercase">Derribos Â· Estado reformado Â· Alzado longitudinal</p>
+          </div>
+          <div class="proj-plans-grid">
+            <canvas class="pdf-page" data-pdf-file="am50-derribos" data-page="1" data-scale="0.75"></canvas>
+            <canvas class="pdf-page" data-pdf-file="am50-on"       data-page="1" data-scale="0.75"></canvas>
+            <canvas class="pdf-page alzado" data-pdf-file="am50-alz" data-page="1" data-scale="0.75"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- â”€â”€ 3. LOOK & FEEL â€” moodboard full-width (layout-03) â”€â”€ -->
+    <div class="container fade-up">
+      <div class="proj-floor-section">
+        <span class="proj-grid-label">Look &amp; Feel</span>
+        <canvas class="pdf-page" data-pdf-file="am50-moodboard" data-page="1" data-scale="1.2"
+                style="width:100%;border-radius:var(--radius)"></canvas>
+      </div>
+    </div>
+
+    <!-- â”€â”€ 4â€“7. GALERÃA â€” cuatro filas continuas, portrait (layouts 04â€“07) â”€â”€ -->
+    <div class="container fade-up">
+      <div class="proj-gallery-group-header">
+        <span>FotografÃ­a</span>
+      </div>
+    </div>
+
+    <div class="container fade-up">
+      <div class="proj-gallery-group">
+
+        <!-- Fila 1: salon ornamental Â· acceso cocina Â· cocina retroiluminada -->
+        <div class="proj-gallery-3col">
+          <img src="images/eixample-02.jpg"
+               alt="Residencia Eixample â€” salon con chimenea y techo ornamental"
+               style="object-position:center 42%" loading="lazy">
+          <img src="images/eixample-07.jpg"
+               alt="Residencia Eixample â€” acceso a cocina, bÃ³veda vista"
+               style="object-position:center 40%" loading="lazy">
+          <img src="images/eixample-08.jpg"
+               alt="Residencia Eixample â€” cocina, detalle lateral con retroiluminaciÃ³n"
+               style="object-position:center 35%" loading="lazy">
+        </div>
+
+        <!-- Fila 2: salon principal Â· salon con balcÃ³n Â· cocina con vidrieras -->
+        <div class="proj-gallery-3col">
+          <img src="images/eixample-03.jpg"
+               alt="Residencia Eixample â€” salon principal con puertas abiertas"
+               style="object-position:center 44%" loading="lazy">
+          <img src="images/eixample-19.jpg"
+               alt="Residencia Eixample â€” salon con suelos hidrÃ¡ulicos y balcon"
+               style="object-position:center 40%" loading="lazy">
+          <img src="images/eixample-16.jpg"
+               alt="Residencia Eixample â€” cocina con tarima y vidrieras originales"
+               style="object-position:center 40%" loading="lazy">
+        </div>
+
+        <!-- Fila 3: baÃ±o Â· habitaciÃ³n ladrillo Â· mosaico hidrÃ¡ulico -->
+        <div class="proj-gallery-3col">
+          <img src="images/eixample-17.jpg"
+               alt="Residencia Eixample â€” baÃ±o con azulejo texturizado y mueble de madera"
+               style="object-position:center 45%" loading="lazy">
+          <img src="images/eixample-09.jpg"
+               alt="Residencia Eixample â€” habitaciÃ³n con ladrillo visto"
+               style="object-position:center 55%" loading="lazy">
+          <img src="images/eixample-01.jpg"
+               alt="Residencia Eixample â€” balcÃ³n con suelos hidrÃ¡ulicos y vistas"
+               style="object-position:center 42%" loading="lazy">
+        </div>
+
+        <!-- Fila 4: corredor Â· galerÃ­a silla amarilla Â· dormitorio -->
+        <div class="proj-gallery-3col">
+          <img src="images/eixample-04.jpg"
+               alt="Residencia Eixample â€” corredor con suelos en cubo"
+               style="object-position:center 38%" loading="lazy">
+          <img src="images/eixample-11.jpg"
+               alt="Residencia Eixample â€” galerÃ­a con silla Zig-Zag amarilla"
+               style="object-position:center 48%" loading="lazy">
+          <img src="images/eixample-18.jpg"
+               alt="Residencia Eixample â€” dormitorio con suelos originales"
+               style="object-position:center 38%" loading="lazy">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- â”€â”€ 8. COCINA â€” secciÃ³n diferenciada fondo arena â”€â”€ -->
+    <div class="proj-offbg">
+      <div class="container fade-up">
+        <div class="proj-cocina">
+          <span class="proj-grid-label">Cocina</span>
+          <div class="proj-cocina-inner">
+            <div>
+              <p>La cocina se concibe como una intervenciÃ³n contemporÃ¡nea que dialoga con el carÃ¡cter del apartamento modernista. Desde una mirada minimalista, la propuesta busca una estÃ©tica atemporal a travÃ©s de lÃ­neas puras y una paleta sofisticada: mÃ³dulos en antracita y acero inoxidable se combinan con electrodomÃ©sticos en negro absoluto, configurando un volumen de presencia casi escultÃ³rica.</p>
+              <p>Este gesto, deliberadamente contrastado con la riqueza ornamental de los suelos hidrÃ¡ulicos y los techos originales, se percibe como una pieza insertada â€”nunca como una imitaciÃ³n del pasadoâ€”.</p>
+            </div>
+            <div class="proj-cocina-photos">
+              <img src="images/eixample-13.jpg"
+                   alt="Residencia Eixample â€” cocina vista desde el salon"
+                   style="object-position:center 38%" loading="lazy">
+              <img src="images/eixample-14.jpg"
+                   alt="Residencia Eixample â€” cocina interior con isla"
+                   style="object-position:center 28%" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- ── FF&E ── -->
+    <div class="proj-offbg">
+      <div class="container fade-up">
+        <div class="proj-cocina">
+          <span class="proj-grid-label">FF&amp;E</span>
+          <div class="proj-cocina-inner">
+            <div>
+              <p>El concepto de diseño parte del diálogo entre la arquitectura modernista existente y una selección de mobiliario contemporáneo, buscando actualizar la vivienda sin alterar su identidad.</p>
+              <p><strong>Arquitectura como base:</strong> Los elementos fijos se integran con el contenedor arquitectónico mediante acabados, tonos y materiales que buscan continuidad con el espacio. El mobiliario fijo se concibe como una extensión de la arquitectura, evitando elementos excesivamente protagonistas.</p>
+              <p><strong>Mobiliario como contrapunto:</strong> Las piezas de FF&amp;E introducen el carácter contemporáneo a través de líneas depuradas, formas orgánicas y materiales nobles. La selección genera contraste con los elementos originales sin competir con ellos, aportando calidez, textura y personalidad.</p>
+              <p><strong>Contemporáneo y atemporal:</strong> La combinación de piezas de diseño contemporáneo con la riqueza arquitectónica del Eixample crea una atmósfera sofisticada, serena y atemporal, donde lo nuevo y lo existente conviven de forma natural.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── FURNITURE MOODBOARD ── -->
+    <div class="container fade-up">
+      <div class="proj-floor-section">
+        <span class="proj-grid-label">Furniture Moodboard</span>
+        <p style="color:var(--n2);margin-bottom:1.5rem;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em">Mix salón y habitación · Mobiliario, iluminación y materiales</p>
+        <div style="background:var(--off);border-radius:var(--radius);aspect-ratio:16/7;display:flex;align-items:center;justify-content:center;color:var(--n2);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase">
+          Imagen del moodboard — añadir archivo
+        </div>
+      </div>
+    </div>
+    <!-- NAV PREV / NEXT -->
+    <div class="container">
+      <div class="proj-nav-bar">
+        <span></span>
+        <span class="proj-nav-center">01 / 03</span>
+        <a href="proyecto-02.html" class="proj-nav-link has-next">Oficinas Diagonal</a>
+      </div>
+    </div>
+
   </main>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script><script src="i18n.js"></script><script src="pdf-renderer.js"></script><script src="script.js"></script>
-  <script>(()=>{const track=document.getElementById('dossierTrack');if(!track)return;const panels=[...track.querySelectorAll('.dossier-panel')],current=document.getElementById('dossierCurrent'),total=document.getElementById('dossierTotal'),progress=document.getElementById('dossierProgress');total.textContent=String(panels.length).padStart(2,'0');const update=()=>{const max=Math.max(1,track.scrollWidth-track.clientWidth),ratio=track.scrollLeft/max;progress.style.transform=`scaleX(${Math.max(.02,ratio)})`;const center=track.scrollLeft+track.clientWidth/2;let active=0;panels.forEach((panel,i)=>{const pc=panel.offsetLeft+panel.offsetWidth/2,ac=panels[active].offsetLeft+panels[active].offsetWidth/2;if(Math.abs(pc-center)<Math.abs(ac-center))active=i});current.textContent=String(active+1).padStart(2,'0')};track.addEventListener('scroll',update,{passive:true});track.addEventListener('wheel',e=>{if(window.innerWidth<=820)return;if(Math.abs(e.deltaY)>Math.abs(e.deltaX)){e.preventDefault();track.scrollLeft+=e.deltaY}},{passive:false});update()})();</script>
-</body></html>
+
+  <footer>
+    <span>Â© 2026 Anabel GÃ³rriz â€” Interior Design &amp; Architecture</span>
+    <span>anabelgorrizp@gmail.com</span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="i18n.js"></script>
+  <script src="pdf-renderer.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+

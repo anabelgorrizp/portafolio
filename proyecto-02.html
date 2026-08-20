@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oficinas Diagonal — Anabel Górriz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">AG</a>
+    <ul>
+      <li><a href="index.html#about"      data-i18n="nav.about">Sobre mí</a></li>
+      <li><a href="index.html#projects"   data-i18n="nav.projects">Proyectos</a></li>
+      <li><a href="index.html#proceso"    data-i18n="nav.proceso">Proceso</a></li>
+      <li><a href="index.html#experience" data-i18n="nav.experience">Experiencia</a></li>
+      <li><a href="index.html#education"  data-i18n="nav.education">Formación</a></li>
+      <li><a href="index.html#contact" class="nav-cta" data-i18n="nav.contact">Contacto</a></li>
+    </ul>
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-lang="es">ES</button>
+      <span class="lang-sep">/</span>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <button class="nav-menu-btn" id="menuBtn">☰</button>
+  </nav>
+
+  <main class="proj-page">
+
+    <!-- BACK -->
+    <div class="container">
+      <a href="index.html#projects" class="proj-back">Proyectos</a>
+    </div>
+
+    <!-- HEADER -->
+    <header class="proj-header">
+      <div class="container">
+        <div class="proj-eyebrow">
+          <span class="proj-num">02</span>
+          <span>Reforma Integral</span>
+          <span>2023 – 2024</span>
+          <span>Vilablanch</span>
+        </div>
+        <h1>Oficinas<br>Diagonal</h1>
+        <p class="proj-tagline-header">Conversión residencial a oficinas · Barcelona</p>
+      </div>
+    </header>
+
+    <!-- ── 1. DESCRIPCIÓN + PLANOS ──────────────────────── -->
+    <div class="container">
+      <div class="proj-content-grid">
+        <div>
+          <span class="proj-grid-label">Reforma integral</span>
+          <p>Proyecto de restauración y diseño interior para un espacio de trabajo flexible, concebido con capacidad de adaptación, crecimiento y transformación según las necesidades de sus usuarios. La versatilidad surge de una retícula neutra, con divisiones mínimas, que facilita la integración presente o futura de despachos, puestos de trabajo o áreas colaborativas.</p>
+          <p>El concepto de interiorismo busca armonizar patrimonio con funcionalidad: preservar la esencia original del edificio respetando molduras, carpinterías y techos altos al tiempo que se incorporan soluciones contemporáneas. El resultado es un entorno que honra el pasado mientras abraza las demandas del trabajo moderno.</p>
+        </div>
+        <div>
+          <canvas class="pdf-page" data-page="13" data-scale="1.0"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 2. ESTRATEGIA DE DISEÑO ──────────────────────── -->
+    <div class="container">
+      <div class="proj-content-grid">
+        <div>
+          <span class="proj-grid-label">Estrategia de diseño</span>
+          <p>La intervención arquitectónica apuesta por la discreción, utilizando materiales neutros de alta funcionalidad que se integran con la estructura existente. La distribución prioriza la fluidez espacial, organizando oficinas, áreas colaborativas y zonas comunes, siempre conservando la amplitud original.</p>
+          <p>El sistema modular emplea particiones ligeras para garantizar flexibilidad. La iluminación, cuidadosamente estudiada, potencia los valores patrimoniales asegurando confort visual. Acabados duraderos con estética sobria refuerzan la fusión entre funcionalidad contemporánea y esencia arquitectónica.</p>
+        </div>
+        <div>
+          <canvas class="pdf-page" data-page="14" data-scale="1.0"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 3. LOOK & FEEL ────────────────────────────────── -->
+    <div class="container">
+      <div class="proj-floor-section">
+        <span class="proj-grid-label">Look &amp; Feel</span>
+        <canvas class="pdf-page" data-page="15" data-scale="1.2" style="width:100%;border-radius:var(--radius)"></canvas>
+      </div>
+    </div>
+
+    <!-- ── 4. GALERÍA DE FOTOGRAFÍA ──────────────────────── -->
+    <div class="container">
+      <div class="proj-gallery-main">
+        <img class="hero-img" src="images/diagonal-05.jpg" alt="Oficinas Diagonal — ventanales con vistas a Barcelona" loading="eager">
+        <img src="images/diagonal-07.jpg" alt="Oficinas Diagonal — detalle ventanal curvo" loading="lazy">
+        <img src="images/diagonal-04.jpg" alt="Oficinas Diagonal — sala principal" loading="lazy">
+        <img src="images/diagonal-03.jpg" alt="Oficinas Diagonal — escalera monumental" loading="lazy">
+        <img src="images/diagonal-06.jpg" alt="Oficinas Diagonal — corredor curvo" loading="lazy">
+      </div>
+      <div class="proj-strip">
+        <img src="images/diagonal-01.jpg" alt="Oficinas Diagonal — ambiente de trabajo" loading="lazy">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="proj-gallery-main">
+        <img src="images/diagonal-02.jpg" alt="Oficinas Diagonal — balconada con querubines" loading="lazy">
+      </div>
+    </div>
+
+    <!-- NAV PREV / NEXT -->
+    <div class="container">
+      <div class="proj-nav-bar">
+        <a href="proyecto-01.html" class="proj-nav-link has-prev">Residencia Eixample</a>
+        <span class="proj-nav-center">02 / 03</span>
+        <a href="proyecto-03.html" class="proj-nav-link has-next">En Blanc</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <span>© 2026 Anabel Górriz — Interior Design &amp; Architecture</span>
+    <span>anabelgorrizp@gmail.com</span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="i18n.js"></script>
+  <script src="pdf-renderer.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
