@@ -12,8 +12,8 @@
 .dossier-panel--off{background:var(--n1)}
 
 /* Cover — editorial, visual, no body copy */
-.dossier-panel--cover{grid-template-columns:minmax(350px,.72fr) minmax(650px,1.28fr)}
-.dossier-cover-copy{align-self:center;max-width:610px}
+.dossier-panel--cover{grid-template-columns:minmax(350px,.72fr) minmax(650px,1.28fr);align-items:end}
+.dossier-cover-copy{align-self:end;max-width:610px;margin:0;padding:0}
 .dossier-cover-copy h1{
   font-size:clamp(2.8rem,4.5vw,4rem);
   font-weight:300;
@@ -35,7 +35,7 @@
   grid-template-columns:repeat(2,minmax(0,1fr));
   gap:12px;
   align-items:stretch;
-  align-self:center;
+  align-self:end;
 }
 .dossier-media{
   margin:0;
@@ -133,4 +133,14 @@
   .dossier-detail-images{grid-template-columns:1fr}
   .dossier-detail-images img{aspect-ratio:4/3;height:auto}
   .dossier-panel--gallery{min-height:0;padding:1.5rem}
+}
+
+
+/* Project 01 cover alignment refinement — 2026-09-05 */
+@media(min-width:821px){
+  .dossier-panel--cover{align-items:end}
+  .dossier-cover-copy{align-self:end;padding-bottom:0}
+  .dossier-cover-images{align-self:end}
+  .dossier-cover-copy h1{margin-top:0}
+  .project-facts{margin-bottom:0}
 }
