@@ -204,3 +204,18 @@
     z-index:3;
   }
 }
+
+
+/* Project 01 — section labels align exactly with the PROYECTOS text */
+@media(min-width:821px){
+  .dossier-panel--spread .dossier-sidecopy .proj-grid-label,
+  .dossier-panel--mood .dossier-sidecopy .proj-grid-label,
+  .dossier-panel--detail .dossier-sidecopy .proj-grid-label{
+    left:calc(2.5rem + 1.4rem);
+    font-size:.68rem;
+    font-weight:400;
+    letter-spacing:.12em;
+    line-height:1;
+    color:var(--muted);
+  }
+}
