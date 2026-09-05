@@ -190,3 +190,17 @@
     margin-bottom:.85rem;
   }
 }
+
+
+/* Project 01 — restore section labels to their original upper position */
+@media(min-width:821px){
+  .dossier-panel--spread .dossier-sidecopy .proj-grid-label,
+  .dossier-panel--mood .dossier-sidecopy .proj-grid-label,
+  .dossier-panel--detail .dossier-sidecopy .proj-grid-label{
+    position:absolute;
+    top:clamp(2rem,3.8vw,4rem);
+    left:clamp(2rem,4.7vw,5.5rem);
+    margin:0;
+    z-index:3;
+  }
+}
