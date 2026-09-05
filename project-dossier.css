@@ -219,3 +219,19 @@
     color:var(--muted);
   }
 }
+
+
+/* Project 01 — section labels match topbar "PROYECTOS" */
+@media(min-width:821px){
+  .dossier-panel--spread .dossier-sidecopy .proj-grid-label,
+  .dossier-panel--mood .dossier-sidecopy .proj-grid-label,
+  .dossier-panel--detail .dossier-sidecopy .proj-grid-label{
+    left:2.5rem;
+    font-size:.68rem;
+    font-weight:400;
+    line-height:1;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    color:var(--muted);
+  }
+}
